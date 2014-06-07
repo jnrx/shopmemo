@@ -28,12 +28,12 @@ phonecatApp.config(['$routeProvider',
         controller: 'ShopDetailCtrl'
       }).
       when('/items', {
-        templateUrl: 'partials/shop-list.html',
-        controller: 'ShopListCtrl'
+        templateUrl: 'partials/item-list.html',
+        controller: 'ItemListCtrl'
       }).
       when('/items/:itemId', {
-        templateUrl: 'partials/shop-detail.html',
-        controller: 'ShopDetailCtrl'
+        templateUrl: 'partials/items-detail.html',
+        controller: 'ItemDetailCtrl'
       }).
       otherwise({
         redirectTo: '/'
