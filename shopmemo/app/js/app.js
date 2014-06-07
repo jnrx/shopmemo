@@ -13,6 +13,7 @@ var phonecatApp = angular.module('phonecatApp', [
 
 phonecatApp.config(['$routeProvider',
   function($routeProvider) {
+      
     $routeProvider.
       when('/', {
           templateUrl: 'partials/home.html',
@@ -23,6 +24,14 @@ phonecatApp.config(['$routeProvider',
         controller: 'ShopListCtrl'
       }).
       when('/shops/:shopId', {
+        templateUrl: 'partials/shop-detail.html',
+        controller: 'ShopDetailCtrl'
+      }).
+      when('/items', {
+        templateUrl: 'partials/shop-list.html',
+        controller: 'ShopListCtrl'
+      }).
+      when('/items/:itemId', {
         templateUrl: 'partials/shop-detail.html',
         controller: 'ShopDetailCtrl'
       }).
