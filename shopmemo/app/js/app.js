@@ -19,21 +19,21 @@ phonecatApp.config(['$routeProvider',
           templateUrl: 'partials/home.html',
           controller: 'MainCtrl'
       }).
-      when('/shops', {
-        templateUrl: 'partials/shop-list.html',
-        controller: 'ShopListCtrl'
+      when('/locations', {
+        templateUrl: 'partials/location-list.html',
+        controller: 'LocationListCtrl'
       }).
-      when('/shops/:shopId', {
-        templateUrl: 'partials/shop-detail.html',
-        controller: 'ShopDetailCtrl'
+      when('/locations/:locationId', {
+        templateUrl: 'partials/location-detail.html',
+        controller: 'LocationDetailCtrl'
       }).
-      when('/items', {
-        templateUrl: 'partials/item-list.html',
-        controller: 'ItemListCtrl'
+      when('/events', {
+        templateUrl: 'partials/event-list.html',
+        controller: 'EventListCtrl'
       }).
-      when('/items/:itemId', {
-        templateUrl: 'partials/items-detail.html',
-        controller: 'ItemDetailCtrl'
+      when('/events/:eventId', {
+        templateUrl: 'partials/event-detail.html',
+        controller: 'EventDetailCtrl'
       }).
       otherwise({
         redirectTo: '/'
