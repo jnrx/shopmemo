@@ -2,11 +2,11 @@
 
 /* Services */
 
-var phonecatServices = angular.module('phonecatServices', ['ngResource']);
+var eventMemoServices = angular.module('eventMemoServices', ['ngResource']);
 
-phonecatServices.factory('Phone', ['$resource',
+eventMemoServices.factory('Location', ['$resource',
   function($resource){
-    return $resource('phones/:phoneId.json', {}, {
-      query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
+    return $resource('locations/:locationId.json', {}, {
+      query: {method:'GET', params:{locationId:'locations'}, isArray:true}
     });
   }]);

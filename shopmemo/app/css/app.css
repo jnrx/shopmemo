@@ -97,3 +97,15 @@ ul.specs dt {
 h1 {
   border-bottom: 1px solid gray;
 }
+
+.my-button {
+  text-align: center;
+}
+.my-button>.button {
+    width: 150px;
+    margin: 20px 50px;
+    /* display: block; */
+}
+.my-button>.button>a {
+    color: #fff;
+}

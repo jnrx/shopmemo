@@ -2,18 +2,18 @@
 
 /* Controllers */
 
-var phonecatControllers = angular.module('phonecatControllers', []);
+var eventMemoControllers = angular.module('eventMemoControllers', []);
 
-phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
-  function($scope, Phone) {
-    $scope.phones = Phone.query();
+eventMemoControllers.controller('LocationListCtrl', ['$scope', 'Location',
+  function($scope, Location) {
+    $scope.locations = Location.query();
     $scope.orderProp = 'age';
   }]);
 
-phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
-  function($scope, $routeParams, Phone) {
-    $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
-      $scope.mainImageUrl = phone.images[0];
+eventMemoControllers.controller('LocationDetailCtrl', ['$scope', '$routeParams', 'Location',
+  function($scope, $routeParams, Location) {
+    $scope.location = Location.get({locationId: $routeParams.locationId}, function(location) {
+      $scope.mainImageUrl = location.images[0];
     });
 
     $scope.setImage = function(imageUrl) {

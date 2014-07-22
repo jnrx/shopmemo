@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="my-button">
-        <a href="#/locations" class="button">Link #1</a>
-        <a href="#/events" class="button">Link #2</a>
+        <div class="button round"><a href="#locations">Locations</a></div>
+        <div class="button round"><a href="#events">Events</a></div>
     </div>
   <div class="row">
     <div class="col-md-2">
@@ -18,12 +18,12 @@
     <div class="col-md-10">
       <!--Body content-->
 
-      <ul class="phones">
-        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
-            class="thumbnail phone-listing">
-          <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
-          <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
-          <p>{{phone.snippet}}</p>
+      <ul class="locations">
+        <li ng-repeat="location in locations | filter:query | orderBy:orderProp"
+            class="thumbnail location-listing">
+          <a href="#/locations/{{location.id}}" class="thumb"><img ng-src="{{location.imageUrl}}"></a>
+          <a href="#/locations/{{location.id}}">{{location.name}}</a>
+          <p>{{location.snippet}}</p>
         </li>
       </ul>
 

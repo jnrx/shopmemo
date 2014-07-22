@@ -2,16 +2,16 @@
 
 /* App Module */
 
-var phonecatApp = angular.module('phonecatApp', [
+var eventMemoApp = angular.module('eventMemoApp', [
   'ngRoute',
-  'phonecatAnimations',
+  'eventMemoAnimations',
 
-  'phonecatControllers',
-  'phonecatFilters',
-  'phonecatServices'
+  'eventMemoControllers',
+  'eventMemoFilters',
+  'eventMemoServices'
 ]);
 
-phonecatApp.config(['$routeProvider',
+eventMemoApp.config(['$routeProvider',
   function($routeProvider) {
       
     $routeProvider.
